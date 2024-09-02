@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+
+    <style>
+
+
+        .box {
+            background-color: rgb(255, 0, 81);
+            border: 6px solid rgb(255, 107, 154);
+            border-radius: 0.3rem;
+            margin: 5px;
+            padding: 50px 50px;
+            width: 20px;
+        }
+
+        .bigbox {
+            display: flex;
+            margin: 8rem 6rem;
+            border: 1px solid rgb(255, 0, 34);
+            border-radius: 0.3 rem;
+            position: sticky;
+            top: 10px;
+        }
+
+        @media (max-width: 320px) {
+            .bigbox {
+                flex-wrap: wrap;
+            }
+
+            .box {
+                background-color: rgb(255, 0, 81);
+                border: 6px solid rgb(255, 107, 154);
+                border-radius: 0.3rem;
+                margin: 5px;
+                padding: 50px 50px;
+                width: 20px;
+            }
+        }
+
+        body {
+            background-image: linear-gradient(steelblue, rgb(213, 243, 255));
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="./09_audio.html">previous doc</a>
+
+    <div class="bigbox">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <pre>
+        Total 5 Position values
+            -> relative
+            -> absolute
+            -> fixed
+            -> sticky
+            -> static
+
+        i_ absolute:
+            ->  When you assign abosolute the element is detached from document and can be
+                arranged anywhere on page using top, bottom, left and right postions.
+    
+        ii_ relative:
+            ->  When you assing relative the element is set relative to its parent element,
+                if the parent element not found by default it relative to html tag.    
+        iii_ static:
+            ->  Static postions element does not have access to left, right, top or bottom
+                nor z-index properties.
+        iv_ fixed:
+            ->  When you assign fixed to element it removed from document and it always
+                relative to html tag.
+        v_ sticky:
+            ->  When you assign sticky to element it will stick from the point it will 
+                reach to any of top, bottom, left or right proprty.
+    </pre>
+
+</body>
+
+</html>
